@@ -13,7 +13,7 @@ namespace MRSA
         static Random rand = new Random();
 
         /// <summary>
-        /// Выполняет мутацию хромосомы
+        /// Performs chromosome mutation
         /// </summary>
         /// <param name="m"></param>
         public static void MutateChr(ref string m)
@@ -82,7 +82,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Выделяет часть строки для мутации хромосомы
+        /// Extracts a substring for chromosome mutation
         /// </summary>
         /// <param name="m"></param>
         /// <returns></returns>

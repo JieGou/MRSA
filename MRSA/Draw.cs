@@ -14,7 +14,7 @@ namespace MRSA
         public const int r = 2;
 
         /// <summary>
-        /// Рисует точки
+        /// Draws points
         /// </summary>
         /// <param name="P"></param>
         public static void DrawPoint(Point[] P)
@@ -27,7 +27,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Соединяет две точки
+        /// Connects two points
         /// </summary>
         /// <param name="A"></param>
         /// <param name="B"></param>
@@ -39,7 +39,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Рисует дерево по точкам
+        /// Draws a tree by points
         /// </summary>
         /// <param name="T"></param>
         /// <param name="P"></param>
@@ -54,7 +54,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Рисует дерево по хромосоме
+        /// Draws a tree from a chromosome
         /// </summary>
         /// <param name="s"></param>
         /// <param name="P"></param>

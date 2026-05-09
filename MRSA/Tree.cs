@@ -10,7 +10,7 @@ using System.IO;
 namespace MRSA
 {
     /// <summary>
-    /// Дерево
+    /// Tree
     /// </summary>
     public class Tree
     {
@@ -22,7 +22,7 @@ namespace MRSA
         static public string Com3 = "";
 
         /// <summary>
-        /// Ребро
+        /// Edge
         /// </summary>
         public class Node
         {
@@ -32,7 +32,7 @@ namespace MRSA
             public Point B;
             //A - Best, B - Worst
             public Node() { }
-            public Node(Point A, Point B,string Style)
+            public Node(Point A, Point B, string Style)
             {
                 this.A = A;
                 this.B = B;
@@ -60,7 +60,7 @@ namespace MRSA
         Point WorstP;
 
         /// <summary>
-        /// Конструктор для создания дерева по двум точкам
+        /// Constructor for creating a tree from two points
         /// </summary>
         /// <param name="A"></param>
         /// <param name="B"></param>
@@ -78,7 +78,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Конструктор для создания дерева по дереву и точке
+        /// Constructor for creating a tree from a tree and a point
         /// </summary>
         /// <param name="A"></param>
         /// <param name="T"></param>
@@ -282,7 +282,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Конструктор для создания дерева по двум поддеревьем
+        /// Constructor for creating a tree from two subtrees
         /// </summary>
         /// <param name="A"></param>
         /// <param name="B"></param>
@@ -335,7 +335,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Находит две точки, расстояние между которыми минимальное
+        /// Finds the two points with minimum distance between them
         /// </summary>
         /// <param name="MinNode1"></param>
         /// <param name="MinNode2"></param>
@@ -415,7 +415,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Находит расстояние между двумя точками
+        /// Calculates the distance between two points
         /// </summary>
         /// <param name="A"></param>
         /// <param name="B"></param>
@@ -426,7 +426,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Выполняет селекцию
+        /// Performs selection
         /// </summary>
         /// <param name="Chrom"></param>
         /// <param name="Chr"></param>
@@ -462,7 +462,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Получает длину хромосомы
+        /// Gets the chromosome length
         /// </summary>
         /// <param name="s"></param>
         /// <param name="P"></param>
@@ -539,7 +539,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Дает информацию о хромосоме
+        /// Provides information about a chromosome
         /// </summary>
         /// <param name="s"></param>
         /// <param name="P"></param>
@@ -655,8 +655,8 @@ namespace MRSA
                     sw.WriteLine("EOF");
                 }
                 MessageBox.Show(
-                 "Данные сохранены",
-                 "Информация",
+                 "Data saved",
+                 "Information",
                  MessageBoxButtons.OK,
                  MessageBoxIcon.Information,
                  MessageBoxDefaultButton.Button1);

@@ -13,7 +13,7 @@ namespace MRSA
         static Random rand = new Random();
 
         /// <summary>
-        /// Выделяет часть хромосомы для кроссоверинга
+        /// Extracts a chromosome segment for crossover
         /// </summary>
         /// <param name="s1"></param>
         /// <returns></returns>
@@ -47,7 +47,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Выполняет кроссоверинг
+        /// Performs crossover
         /// </summary>
         /// <param name="s1"></param>
         /// <param name="s2"></param>
@@ -62,7 +62,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Делает обмен генами
+        /// Performs gene exchange
         /// </summary>
         /// <param name="c1"></param>
         /// <param name="c2"></param>

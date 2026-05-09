@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -111,7 +111,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(138, 17);
             this.checkBox1.TabIndex = 27;
-            this.checkBox1.Text = "Настройки алгоритма";
+            this.checkBox1.Text = "Algorithm settings";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -122,7 +122,7 @@
             this.ClearPanel.Name = "ClearPanel";
             this.ClearPanel.Size = new System.Drawing.Size(115, 36);
             this.ClearPanel.TabIndex = 26;
-            this.ClearPanel.Text = "Очистить";
+            this.ClearPanel.Text = "Clear";
             this.ClearPanel.UseVisualStyleBackColor = true;
             this.ClearPanel.Click += new System.EventHandler(this.ClearPanel_Click);
             // 
@@ -142,7 +142,7 @@
             this.FileO.Name = "FileO";
             this.FileO.Size = new System.Drawing.Size(39, 13);
             this.FileO.TabIndex = 25;
-            this.FileO.Text = "Файл:";
+            this.FileO.Text = "File:";
             // 
             // button1
             // 
@@ -151,7 +151,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 40);
             this.button1.TabIndex = 24;
-            this.button1.Text = "Открыть";
+            this.button1.Text = "Open";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -169,7 +169,7 @@
             this.groupBox2.Size = new System.Drawing.Size(246, 119);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Настройки алгоритма";
+            this.groupBox2.Text = "Algorithm settings";
             // 
             // label1
             // 
@@ -179,7 +179,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Скрещивание";
+            this.label1.Text = "Crossover";
             // 
             // label2
             // 
@@ -189,7 +189,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Мутация";
+            this.label2.Text = "Mutation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
@@ -199,7 +199,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Максимум итераций";
+            this.label5.Text = "Maximum iterations";
             // 
             // PrOfCross
             // 
@@ -272,7 +272,7 @@
             this.groupBox1.Size = new System.Drawing.Size(250, 207);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Дополнительная информация";
+            this.groupBox1.Text = "Additional information";
             // 
             // textBox8
             // 
@@ -315,7 +315,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 13);
             this.label7.TabIndex = 24;
-            this.label7.Text = "Координаты точки";
+            this.label7.Text = "Point coordinates";
             // 
             // textBox6
             // 
@@ -332,7 +332,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 13);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Размер дерева";
+            this.label6.Text = "Tree size";
             // 
             // textBox4
             // 
@@ -374,7 +374,7 @@
             this.ShagOfAlg.Name = "ShagOfAlg";
             this.ShagOfAlg.Size = new System.Drawing.Size(30, 13);
             this.ShagOfAlg.TabIndex = 15;
-            this.ShagOfAlg.Text = "Шаг:";
+            this.ShagOfAlg.Text = "Step:";
             // 
             // BestOfChroma
             // 
@@ -383,7 +383,7 @@
             this.BestOfChroma.Name = "BestOfChroma";
             this.BestOfChroma.Size = new System.Drawing.Size(108, 13);
             this.BestOfChroma.TabIndex = 9;
-            this.BestOfChroma.Text = "Лучшая хромосома:";
+            this.BestOfChroma.Text = "Best chromosome:";
             // 
             // BestOfLength
             // 
@@ -392,7 +392,7 @@
             this.BestOfLength.Name = "BestOfLength";
             this.BestOfLength.Size = new System.Drawing.Size(138, 13);
             this.BestOfLength.TabIndex = 8;
-            this.BestOfLength.Text = "Размер дерева Штейнера";
+            this.BestOfLength.Text = "Steiner tree size";
             // 
             // TimeOfAlg
             // 
@@ -401,7 +401,7 @@
             this.TimeOfAlg.Name = "TimeOfAlg";
             this.TimeOfAlg.Size = new System.Drawing.Size(40, 13);
             this.TimeOfAlg.TabIndex = 17;
-            this.TimeOfAlg.Text = "Время";
+            this.TimeOfAlg.Text = "Time";
             // 
             // Save
             // 
@@ -410,7 +410,7 @@
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(120, 36);
             this.Save.TabIndex = 18;
-            this.Save.Text = "Сохранить";
+            this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
@@ -421,7 +421,7 @@
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(70, 37);
             this.Stop.TabIndex = 16;
-            this.Stop.Text = "Пауза";
+            this.Stop.Text = "Pause";
             this.Stop.UseVisualStyleBackColor = true;
             this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
@@ -454,7 +454,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Количество хромосом";
+            this.label4.Text = "Number of chromosomes";
             // 
             // label3
             // 
@@ -463,7 +463,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Количество точек";
+            this.label3.Text = "Number of points";
             // 
             // Start
             // 
@@ -472,7 +472,7 @@
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(167, 37);
             this.Start.TabIndex = 2;
-            this.Start.Text = "Старт/Продолжить";
+            this.Start.Text = "Start/Continue";
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
@@ -500,7 +500,7 @@
             this.GeneratePoint.Name = "GeneratePoint";
             this.GeneratePoint.Size = new System.Drawing.Size(120, 40);
             this.GeneratePoint.TabIndex = 0;
-            this.GeneratePoint.Text = "Генерация";
+            this.GeneratePoint.Text = "Generate";
             this.GeneratePoint.UseVisualStyleBackColor = true;
             this.GeneratePoint.Click += new System.EventHandler(this.GeneratePoint_Click);
             // 

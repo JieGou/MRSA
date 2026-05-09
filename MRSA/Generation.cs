@@ -13,7 +13,7 @@ namespace MRSA
         public static Random rand = new Random();
 
         /// <summary>
-        /// Информация о расстоянии точек
+        /// Information about the distance between points
         /// </summary>
         public class Distant
         {
@@ -32,7 +32,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Генерирует точки
+        /// Generates points
         /// </summary>
         /// <param name="P"></param>
         public static void GeneratePoints(ref Point[] P)
@@ -57,7 +57,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Генерирует хромосомы
+        /// Generates chromosomes
         /// </summary>
         /// <param name="Chr"></param>
         /// <param name="k"></param>
@@ -91,7 +91,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Получает размер минимального связующего дерева
+        /// Gets the size of the minimum spanning tree
         /// </summary>
         /// <param name="P"></param>
         /// <returns></returns>

@@ -28,7 +28,7 @@ namespace MRSA
         Stopwatch time = new Stopwatch();
         
         /// <summary>
-        /// Генерирует точки и хромосомы
+        /// Generates points and chromosomes
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -52,8 +52,8 @@ namespace MRSA
               {
                   timer1.Stop();
                   MessageBox.Show(
-                  "Возможные причины:\nНеверное количество точек\nДля работы алгоритма необходимо минимум 2 точки, максимум 200",
-                  "Ошибка при генерации",
+                  "Possible causes:\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
+                  "Generation error",
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Error,
                   MessageBoxDefaultButton.Button1);
@@ -61,7 +61,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Начало алгоритма
+        /// Starts the algorithm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -69,7 +69,7 @@ namespace MRSA
         {
             try
             {
-                if (NP.Count > 0)//Если пользователь сам выбрал необходимые ему точки
+                if (NP.Count > 0) // If the user manually selected the required points
                 {
                     int i;
                 List<Point> PS = new List<Point>();
@@ -94,8 +94,8 @@ namespace MRSA
             {
                 timer1.Stop();
                 MessageBox.Show(
-                "Возможные причины:\nНеверное количество точек\nДля работы алгоритма необходимо минимум 2 точки, максимум 200",
-                "Ошибка при запуске",
+                "Possible causes:\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
+                "Algorithm start error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
@@ -103,7 +103,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Таймер для повтора шагов алгоритма
+        /// Timer for repeating algorithm steps
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -168,8 +168,8 @@ namespace MRSA
             {
                 timer1.Stop();
                 MessageBox.Show(
-                "Возможные причины:\nНеверное количество точек\nДля работы алгоритма необходимо минимум 2 точки, максимум 200",
-                "Ошибка при работе алгоритма",
+                "Possible causes:\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
+                "Algorithm runtime error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
@@ -177,7 +177,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Приостанавливает работу алгоритма
+        /// Pauses the algorithm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -188,7 +188,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Сохраняет данные о работе алгоритма
+        /// Saves algorithm results
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -204,8 +204,8 @@ namespace MRSA
                 else
                 {
                     MessageBox.Show(
-                    "Данных нету",
-                    "Информация",
+                    "No data available",
+                    "Information",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information,
                     MessageBoxDefaultButton.Button1);
@@ -214,8 +214,8 @@ namespace MRSA
             catch 
             {
                 MessageBox.Show(
-                "Возможные причины:\nНеверно указан путь к файлу",
-                "Ошибка при сохранении",
+                "Possible causes:\nInvalid file path specified",
+                "Save error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
@@ -223,7 +223,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Закрывает программу
+        /// Closes the application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -233,7 +233,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Устанавливает значения, которые удобны для показа работы алгоритма
+        /// Sets default values convenient for demonstrating the algorithm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -257,7 +257,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Клавиша в меню для генерации
+        /// Menu button for generation
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -267,7 +267,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Клавиша в меню для запуска алгоритма
+        /// Menu button for starting the algorithm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -277,7 +277,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Клавиша в меню для паузы
+        /// Menu button for pause
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -287,7 +287,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Клавиша в меню для сохранения
+        /// Menu button for saving
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -297,7 +297,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Открытие файла
+        /// Opens a file
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -306,7 +306,7 @@ namespace MRSA
             try
             {
                 OpenFileDialog a = new OpenFileDialog();
-                a.Filter = "tsp files (*.tsp)|*.tsp|All files (*.*)|*.*"; //только txt файлы 
+                a.Filter = "tsp files (*.tsp)|*.tsp|All files (*.*)|*.*"; // only tsp files
                 a.ShowDialog();
                 textBox5.Text = a.FileName;
                 string path = a.FileName;
@@ -375,8 +375,8 @@ namespace MRSA
             catch 
             {
                 MessageBox.Show(
-                "Возможные причины:\nОткрыт файл TOUR прежде, чем TSP\nНеверно указан путь к файлу\nНевозможно прочитать файл\nНеверное количество точек\nДля работы алгоритма необходимо минимум 2 точки, максимум 200",
-                "Ошибка при открытие файла",
+                "Possible causes:\nTOUR file opened before TSP file\nInvalid file path specified\nCannot read file\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
+                "File open error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
@@ -385,7 +385,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Рисование точек по клику мышки
+        /// Drawing points by mouse click
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -401,18 +401,16 @@ namespace MRSA
             catch
             {
                 MessageBox.Show(
-                "Возможные причины:\nДобавляли точки во время работы алгоритма\nНеверное количество точек\nДля работы алгоритма необходимо минимум 2 точки\nПревышен лимит количества точек\nМаксимум 200 точек",
-                "Ошибка при рисовании точек",
+                "Possible causes:\nPoints were added while the algorithm was running\nInvalid number of points\nThe algorithm requires at least 2 points\nPoint limit exceeded\nMaximum 200 points",
+                "Point drawing error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
             }
-  
-
         }
 
         /// <summary>
-        /// Очищает панель для рисования
+        /// Clears the drawing panel
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -435,7 +433,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Возможность убрать настройки алгоритма
+        /// Option to hide algorithm settings
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -449,7 +447,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Клавиша в меню очищает панель для рисования
+        /// Menu button that clears the drawing panel
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -459,7 +457,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Показывает координаты панели
+        /// Shows panel coordinates
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

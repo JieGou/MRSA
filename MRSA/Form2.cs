@@ -18,7 +18,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Сохраняет имя TSP
+        /// Saves the TSP name
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -32,7 +32,7 @@ namespace MRSA
         }
 
         /// <summary>
-        /// Отменяет сохранение
+        /// Cancels saving
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
