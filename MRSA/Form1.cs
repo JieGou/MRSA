@@ -26,7 +26,7 @@ namespace MRSA
         public string[] Chr;
         public static int CountOfShag;
         Stopwatch time = new Stopwatch();
-        
+
         /// <summary>
         /// Generates points and chromosomes
         /// </summary>
@@ -47,17 +47,17 @@ namespace MRSA
                 Generation.GeneratePoints(ref P);
                 Generation.GenerateChromosome(ref Chr, (int)CountOfPoints.Value);
                 Draw.DrawPoint(P);
-              }
-              catch 
-              {
-                  timer1.Stop();
-                  MessageBox.Show(
-                  "Possible causes:\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
-                  "Generation error",
-                  MessageBoxButtons.OK,
-                  MessageBoxIcon.Error,
-                  MessageBoxDefaultButton.Button1);
-              }
+            }
+            catch
+            {
+                timer1.Stop();
+                MessageBox.Show(
+                "Possible causes:\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
+                "Generation error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error,
+                MessageBoxDefaultButton.Button1);
+            }
         }
 
         /// <summary>
@@ -72,19 +72,19 @@ namespace MRSA
                 if (NP.Count > 0) // If the user manually selected the required points
                 {
                     int i;
-                List<Point> PS = new List<Point>();
-                if (P != null)
-                for (i = 0; i < P.Length; i++)
-                        PS.Add(P[i]);
-                for (i = 0; i < NP.Count; i++)
-                    PS.Add(NP[i]);
+                    List<Point> PS = new List<Point>();
+                    if (P != null)
+                        for (i = 0; i < P.Length; i++)
+                            PS.Add(P[i]);
+                    for (i = 0; i < NP.Count; i++)
+                        PS.Add(NP[i]);
                     P = new Point[PS.Count];
-                CountOfPoints.Value = PS.Count;
+                    CountOfPoints.Value = PS.Count;
                     Chr = new string[(int)CountOfChr.Value];
                     Generation.GenerateChromosome(ref Chr, PS.Count);
                     for (i = 0; i < PS.Count; i++)
                         P[i] = PS[i];
-                NP.Clear();
+                    NP.Clear();
                 }
                 textBox6.Text = $"{Generation.GenetateKrusckal(P):F2}";
                 timer1.Start();
@@ -164,7 +164,7 @@ namespace MRSA
                 if (CountOfShag == CountOfIt.Value)
                     timer1.Stop();
             }
-            catch 
+            catch
             {
                 timer1.Stop();
                 MessageBox.Show(
@@ -211,7 +211,7 @@ namespace MRSA
                     MessageBoxDefaultButton.Button1);
                 }
             }
-            catch 
+            catch
             {
                 MessageBox.Show(
                 "Possible causes:\nInvalid file path specified",
@@ -227,7 +227,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -237,7 +237,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void установитьЗначенияПоУмолчаниюToolStripMenuItem_Click(object sender, EventArgs e)
+        private void setDefaultValuesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (CountOfShag > 1)
             {
@@ -261,7 +261,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void генерацияToolStripMenuItem_Click(object sender, EventArgs e)
+        private void generateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GeneratePoint_Click(sender, e);
         }
@@ -271,7 +271,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void запускАлгоритмаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void startAlgorithmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Start_Click(sender, e);
         }
@@ -281,7 +281,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void паузаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stop_Click(sender, e);
         }
@@ -291,7 +291,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Save_Click(sender, e);
         }
@@ -340,7 +340,7 @@ namespace MRSA
                                     Chromosoma += ((char)(int.Parse(line) + 96));
                         }
                     }
-                    
+
                     if (kol > 200)
                         throw new Exception();
                     else
@@ -372,7 +372,7 @@ namespace MRSA
                     }
                 }
             }
-            catch 
+            catch
             {
                 MessageBox.Show(
                 "Possible causes:\nTOUR file opened before TSP file\nInvalid file path specified\nCannot read file\nInvalid number of points\nThe algorithm requires at least 2 points and at most 200",
@@ -381,7 +381,7 @@ namespace MRSA
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1);
             }
-            
+
         }
 
         /// <summary>
@@ -451,7 +451,7 @@ namespace MRSA
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ClearPanel_Click(sender, e);
         }
